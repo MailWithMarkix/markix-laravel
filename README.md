@@ -9,7 +9,7 @@ Markix for Laravel is our first-party Laravel integration. It's the fastest way 
 To use the Markix driver, install the mailer transport via Composer:
 
 ```bash
-composer require markix/laravel
+composer require markix/markix-laravel
 ```
 
 Next, either set the `default` option in your application's `config/mail.php` configuration file to `markix`, or update the `MAIL_MAILER` environment variable in your application's `.env` file:
