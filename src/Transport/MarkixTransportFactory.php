@@ -33,10 +33,10 @@ class MarkixTransportFactory extends AbstractTransport
 
         $data = [
             'from' => $this->mapAddress($email->getFrom()[0]),
-            'to' => array_map('mapAddress', $email->getTo()),
-            'bcc' => array_map('mapAddress', $email->getBcc()),
-            'cc' => array_map('mapAddress', $email->getCc()),
-            'reply_to' => array_map('mapAddress', $email->getReplyTo()),
+            'to' => array_map([$this, 'mapAddress'], $email->getTo()),
+            'bcc' => array_map([$this, 'mapAddress'], $email->getBcc()),
+            'cc' => array_map([$this, 'mapAddress'], $email->getCc()),
+            'reply_to' => array_map([$this, 'mapAddress'], $email->getReplyTo()),
 
             'subject' => $email->getSubject(),
             'text_body' => $email->getTextBody(),
