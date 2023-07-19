@@ -32,8 +32,5 @@ Finally, add your Markix API test token to your local `.env` file. If you're dep
 MARKIX_TOKEN=test_....
 ```
 
-## Official Documentation
-Documentation for Horizon can be found on the Laravel website.
-
 ## License
 Markix for Laravel is open-sourced software licensed under the MIT license.
