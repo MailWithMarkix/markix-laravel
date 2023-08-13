@@ -12,6 +12,14 @@ To use the Markix driver, install the mailer transport via Composer:
 composer require markix/markix-laravel
 ```
 
+Then, add the following option to your `config/mail.php` configuration file:
+
+```php
+'markix' => [
+    'transport' => 'markix',
+],
+```
+
 Next, either set the `default` option in your application's `config/mail.php` configuration file to `markix`, or update the `MAIL_MAILER` environment variable in your application's `.env` file:
 
 ```ini
